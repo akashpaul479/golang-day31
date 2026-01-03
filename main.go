@@ -1,7 +1,7 @@
 package main
 
 import (
-	"jwt/jwt2"
+	"jwt/jwtwithdatabases"
 )
 
 func main() {
@@ -12,5 +12,6 @@ func main() {
 	// }
 	// fmt.Println(token)
 
-	jwt2.CrudRestApiWithJWT()
+	// jwt2.CrudRestApiWithJWT()
+	jwtwithdatabases.Jwtwithdatabases()
 }
