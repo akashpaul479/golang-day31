@@ -35,7 +35,7 @@ type Claims struct {
 	jwt.RegisteredClaims
 }
 
-// Login generate JWT
+// Login (generate JWT)
 func Login(w http.ResponseWriter, r *http.Request) {
 	var cred Crenditals
 	if err := json.NewDecoder(r.Body).Decode(&cred); err != nil {
